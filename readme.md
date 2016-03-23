@@ -37,7 +37,8 @@ $app->post('postdataindra', [
 
 ##Controller
 
-app/Http/Controllers/IndraController.php
+:+1: app/Http/Controllers/IndraController.php
+
 ><?php
 >
 >namespace App\Http\Controllers;
