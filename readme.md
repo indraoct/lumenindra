@@ -8,7 +8,7 @@
 
 Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
-## Dokumentasi Aplikasi
+## Cara Panggil
 
 POST DATA :
 
@@ -17,3 +17,20 @@ Ketik di terminal => curl --data "name=indra&skill=web development" http://local
 GET DATA :
 
 Ketik di browser  http://localhost/lumenindra/getdataindra
+
+## Routing
+
+/**
+ * get data indra
+ */
+$app->get('getdataindra', [
+    'as' => 'profile', 'uses' => 'IndraController@getdata'
+]);
+
+
+/**
+ * post data indra
+ */
+$app->post('postdataindra', [
+    'as' => 'profile', 'uses' => 'IndraController@postdata'
+]);
